@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Регистрация (администратор) | InvExGame</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+        crossorigin="anonymous">
+        <style>
+            #login-page-cont {
+                max-width: 500px;
+            }
+            #login-page-logo {
+                max-width: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="login-page-cont" class="position-absolute top-50 start-50 translate-middle container">
+            <div id="login-page-logo" class="container-sm">
+                <img src="https://imgbly.com/ib/yUk75dcVpP.png" width="100%">
+            </div>
+            <form action="" method="post" class="login-form">
+                <div class="login-form" class="mb-3">
+                    <label for="login" class="form-label">Введите логин: </label>
+                    <input class="form-control" type="text" name="login" id="login" required />
+                </div>
+                <div class="login-form" class="mb-3">
+                    <label for="password" class="form-label">Введите пароль: </label>
+                    <input class="form-control" type="password" name="password" id="password" required />
+                </div>
+                <div class="login-form" class="mb-3">
+                    <label for="password" class="form-label">Введите имя: </label>
+                    <input class="form-control" type="text" name="adm_name" id="adm_name" required />
+                </div>
+                <div class="login-form" class="mb-3">
+                    <label for="password" class="form-label">Введите информацию о себе: </label>
+                    <textarea class="form-control" name="adm_info" id="adm_info"></textarea>
+                </div>
+                <div id="login-help-text" class="form-text" width="300">
+                    <p>Регистрация аккаунта организатора.</p>
+                </div>
+                <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+            </form>
+        </div>
+    </body>
+</html>

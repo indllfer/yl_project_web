@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Какая-то страница | InvExGame</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+          crossorigin="anonymous">
+    <style>
+        #login-page-logo {
+            max-width: 500px;
+            padding: 20px 0px 20px 0px;
+        }
+		#game-header {
+			background-color: rgb(230, 230, 230);
+		}
+		#amounts {
+			padding: 20px 0px;
+		}
+    </style>
+	 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	 <script>google.charts.load('current', {packages: ['corechart', 'line']});
+		google.charts.setOnLoadCallback(drawCurveTypes);
+		
+		function drawCurveTypes() {
+			  var data = new google.visualization.DataTable();
+			  data.addColumn('number', 'X');
+			  data.addColumn('number', 'Dogs');
+			  data.addColumn('number', 'Cats');
+		
+			  data.addRows([
+				[0, 0, 0],    [1, 10, 5],   [2, 23, 15],  [3, 17, 9],   [4, 18, 10],  [5, 9, 5],
+				[6, 11, 3],   [7, 27, 19],  [8, 33, 25],  [9, 40, 32],  [10, 32, 24], [11, 35, 27],
+				[12, 30, 22], [13, 40, 32], [14, 42, 34], [15, 47, 39], [16, 44, 36], [17, 48, 40],
+				[18, 52, 44], [19, 54, 46], [20, 42, 34], [21, 55, 47], [22, 56, 48], [23, 57, 49],
+				[24, 60, 52], [25, 50, 42], [26, 52, 44], [27, 51, 43], [28, 49, 41], [29, 53, 45],
+				[30, 55, 47], [31, 60, 52], [32, 61, 53], [33, 59, 51], [34, 62, 54], [35, 65, 57],
+				[36, 62, 54], [37, 58, 50], [38, 55, 47], [39, 61, 53], [40, 64, 56], [41, 65, 57],
+				[42, 63, 55], [43, 66, 58], [44, 67, 59], [45, 69, 61], [46, 69, 61], [47, 70, 62],
+				[48, 72, 64], [49, 68, 60], [50, 66, 58], [51, 65, 57], [52, 67, 59], [53, 70, 62],
+				[54, 71, 63], [55, 72, 64], [56, 73, 65], [57, 75, 67], [58, 70, 62], [59, 68, 60],
+				[60, 64, 56], [61, 60, 52], [62, 65, 57], [63, 67, 59], [64, 68, 60], [65, 69, 61],
+				[66, 70, 62], [67, 72, 64], [68, 75, 67], [69, 145, 72]
+			  ]);
+		
+			  var options = {
+				hAxis: {
+				  title: 'Time'
+				},
+				vAxis: {
+				  title: 'Popularity'
+				},
+				series: {
+				  1: {curveType: 'function'}
+				}
+			  };
+		
+			  var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+			  chart.draw(data, options);
+			}</script>
+</head>
+<body>
+    <header>
+        <div class="container"></div>
+			<div class="row" id="game-header">
+				<div class="col-lg-5">
+					<img src="https://imgbly.com/ib/yUk75dcVpP.png" width="100%">
+				</div>
+				<div id="amounts" class="col-lg-4">
+					<div class="row">
+					    <div class="col-8">
+							<p class="fs-5 fw-bold text-end">СУММАРНАЯ СТОИМОСТЬ АКТИВОВ: </p>
+					    </div>
+						<div class="col-4">
+							<p class="fs-5">10450000р</p>
+					    </div>
+					</div>
+					<div class="row">
+					    <div class="col-8">
+							<p class="fs-5 fw-bold text-end">ИЗМЕНЕНИЕ СТОИМОСТИ АКТИВОВ: </p>
+					    </div>
+						<div class="col-4">
+							<p class="fs-5">+450000р</p>
+					    </div>
+					</div>
+					<div class="row">
+					    <div class="col-8">
+							<p class="fs-5 fw-bold text-end">ДОСТУПНЫЕ СРЕДСТВА: </p>
+					    </div>
+						<div class="col-4">
+							<p class="fs-5">2000000р</p>
+					    </div>
+					</div>
+				</div>
+				<div class="col-lg-2">
+					<div class="d-flex flex-column align-items-center">
+						<div class="col">
+							<p class="fs-5 fw-bold text-center">ХОД 1</p>
+						</div>
+						<div class="col">
+							<p class="fs-1 fw-bolder text-center">8:00</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-1">P4</div>
+			</div>
+    </header>
+    <div id="main_cont" class="container-sm">
+        <div id="chart_div"></div> 	
+    </div>
+</body>
+</html>
+
