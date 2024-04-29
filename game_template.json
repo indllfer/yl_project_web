@@ -1,0 +1,73 @@
+{
+  "game_id": null,
+  "game_name": null,
+  "game_info": null,
+  "game_admin": null,
+  "game_rules": {
+    "initial_amount": null,
+    "steps": null,
+    "step_time": null,
+    "other_rules": null
+  },
+  "assets": [
+    {
+      "asset_type": null,
+      "asset_listing": null,
+      "asset_name": null,
+      "asset_values": [
+        null,
+        null
+      ]
+    },
+    {
+      "asset_type": null,
+      "asset_listing": null,
+      "asset_name": null,
+      "asset_values": [
+        null,
+        null
+      ]
+    }
+  ],
+  "news": [
+    {
+      "related_asset": null,
+      "news_text": null,
+      "news_values": [
+        null,
+        null
+      ]
+    },
+    {
+      "related_asset": null,
+      "news_text": null,
+      "news_values": [
+        null,
+        null
+      ]
+    }
+  ],
+  "players": [
+    {
+      "player_id": null,
+      "amount": null,
+      "amount_changing": null,
+      "players_assets": [
+        {
+          "asset_listing": null,
+          "players_asset_values": [
+            null,
+            null
+          ]
+        },
+        {
+          "asset_listing": null,
+          "players_asset_values": [
+            null,
+            null
+          ]
+        }
+      ]
+    }
+  ]
+}
